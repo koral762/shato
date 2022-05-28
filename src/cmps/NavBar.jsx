@@ -16,7 +16,7 @@ export const NavBar = () => {
 
         }, 2000);
 
-        toggleMenu(!menuIsOpen);
+        if(menuIsOpen === "true"){toggleMenu(!menuIsOpen)}
     }
 
     return (
@@ -32,7 +32,6 @@ export const NavBar = () => {
                 </div>
 
                 <div id="menu" className="left-nav-web">
-                    {/* <Link to='/shoppingcart'><p className="order-naw">הזמן חופשה</p></Link> */}
                     <a className="a-icon i-whatsapp" href="https://wa.me/972524499904" target="_blank" rel="noreferrer noopener"><p className="order-naw">הזמן חופשה</p></a>
                 </div>
                 <button className="menu-btn-mobile" onClick={() => toggleMenu(!menuIsOpen)}><i className={menuIsOpen ? "fa fa-close" : "fa fa-align-justify"} style={{ fontSize: "20px" }}></i></button>

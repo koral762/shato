@@ -4,7 +4,7 @@
 
     width: 1000px;
     height: 550px;
-    margin-top: 4rem;
+    margin-top: 19%;
     background-color: rgb(255, 255, 255);
 
 
@@ -20,13 +20,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
     @include mobile-layout {
         align-items: unset;
+        flex-direction: row;
         margin-top:50px;
     }
-
+    
 }
+
+
 
 
 .small-imgs-container {
@@ -98,7 +102,7 @@
         margin-right: 0;
         width: 100%;
         border-radius:0px;
-        
+
         .css-1m9128y {
             margin-top: 0;
         }

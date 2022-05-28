@@ -158,6 +158,12 @@
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.466);
     border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+
+    @include mobile-layout {
+      border-top: 1px solid rgba(0, 0, 0, 0);
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
+
   }
 }
 
