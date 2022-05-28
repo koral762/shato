@@ -23,6 +23,7 @@
     
     @include mobile-layout {
         align-items: unset;
+        margin-top:50px;
     }
 
 }
@@ -92,10 +93,15 @@
     .css-1m9128y {
         display: none;
     }
-
+    
     @include mobile-layout {
         margin-right: 0;
         width: 100%;
+        border-radius:0px;
+        
+        .css-1m9128y {
+            margin-top: 0;
+        }
     }
 
 }

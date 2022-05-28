@@ -32,7 +32,7 @@ export const CarouselUIMobile= () => {
     ]
 
     return (
-        <Carousel className='carousel-mobile-container'>
+        <Carousel autoPlay={false} className='carousel-mobile-container'>
             
             <img className="" style={{"width":"-webkit-fill-available"}} src={I1}></img> 
             <img className="" style={{"width":"-webkit-fill-available"}} src={I2}></img> 
