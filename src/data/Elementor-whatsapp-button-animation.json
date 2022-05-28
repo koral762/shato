@@ -1,0 +1,133 @@
+{
+    "version": "0.4",
+    "title": "\u05d0\u05d9\u05d9\u05e7\u05d5\u05df WhatsApp \u05e6\u05e3 \u05e2\u05dd \u05d0\u05e0\u05d9\u05de\u05e6\u05d9\u05d9\u05ea \u05e1\u05d5\u05e0\u05d0\u05e8",
+    "type": "section",
+    "content": [
+        {
+            "id": "11b54b7",
+            "settings": {
+                "gap": "no",
+                "background_background": "classic",
+                "background_color": "#23A455",
+                "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                },
+                "jet_parallax_layout_list": [
+                    {
+                        "jet_parallax_layout_image": {
+                            "url": ""
+                        },
+                        "_id": "dec6466",
+                        "jet_parallax_layout_image_tablet": {
+                            "url": "",
+                            "id": ""
+                        },
+                        "jet_parallax_layout_image_mobile": {
+                            "url": "",
+                            "id": ""
+                        },
+                        "jet_parallax_layout_speed": {
+                            "unit": "%",
+                            "size": 50,
+                            "sizes": []
+                        },
+                        "jet_parallax_layout_type": "scroll",
+                        "jet_parallax_layout_z_index": "",
+                        "jet_parallax_layout_bg_x": 50,
+                        "jet_parallax_layout_bg_y": 50,
+                        "jet_parallax_layout_bg_size": "auto",
+                        "jet_parallax_layout_animation_prop": "transform",
+                        "jet_parallax_layout_on": [
+                            "desktop",
+                            "tablet"
+                        ],
+                        "jet_parallax_layout_direction": "1",
+                        "jet_parallax_layout_fx_direction": "fade-in"
+                    }
+                ],
+                "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": 0,
+                    "bottom": "0",
+                    "left": 0,
+                    "isLinked": true
+                }
+            },
+            "elements": [
+                {
+                    "id": "33f4ac8",
+                    "settings": {
+                        "_column_size": 100
+                    },
+                    "elements": [
+                        {
+                            "id": "515f6e4f",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fab fa-whatsapp",
+                                    "library": "fa-brands"
+                                },
+                                "link": {
+                                    "url": "https:\/\/api.whatsapp.com\/send?phone=972543300319",
+                                    "is_external": "",
+                                    "nofollow": ""
+                                },
+                                "primary_color": "#ffffff",
+                                "_padding": {
+                                    "unit": "px",
+                                    "top": "10",
+                                    "right": "10",
+                                    "bottom": "4",
+                                    "left": "10",
+                                    "isLinked": false
+                                },
+                                "_z_index": 999,
+                                "_animation": "zoomIn",
+                                "animation_duration": "slow",
+                                "_animation_delay": 3000,
+                                "_background_background": "gradient",
+                                "_background_color": "#61d466",
+                                "_background_color_b": "#52b43e",
+                                "_border_radius": {
+                                    "unit": "px",
+                                    "top": "100",
+                                    "right": "100",
+                                    "bottom": "100",
+                                    "left": "100",
+                                    "isLinked": true
+                                },
+                                "_element_width": "initial",
+                                "_position": "fixed",
+                                "_offset_orientation_h": "end",
+                                "_offset_x_end": {
+                                    "size": 10,
+                                    "unit": "px"
+                                },
+                                "_offset_orientation_v": "end",
+                                "_offset_y_end": {
+                                    "size": 11,
+                                    "unit": "px"
+                                },
+                                "custom_css": "selector .elementor-widget-container:before,\nselector .elementor-widget-container:after{\n      content: ' ';\n      width: 100%;\n      height: 100%;\n      position: absolute;\n      z-index: -1;\n      left:0px;\n      bottom: 0px;\n      background-color: #61d466;\n      border-radius: 50%;\n      \n      animation-duration: 1.2s;\n      animation-iteration-count: infinite;\n      animation-direction: alternate-reverse;\n      animation-name: whatsapp-animation-kfirdigital;\n      animation-delay: .2s;\n      animation-timing-function: ease-out;\n}\n\nselector .elementor-widget-container:after{\n      width: calc(100% + 10px);\n      height: calc(100% + 10px);\n      margin:-5px;\n      animation-delay: 0.5s;\n}\n\n@keyframes whatsapp-animation-kfirdigital {\n  0% {\n    opacity: 0;\n    transform: scale(0.7);\n  }\n\n  100% {\n    opacity: 0.4;\n    transform: scale(1.3); \n  }\n}"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ]
+}

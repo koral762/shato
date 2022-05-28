@@ -1,0 +1,15 @@
+//setup
+@import '../setup/variables';
+@import '../setup/mixins';
+
+//Basic
+@import './basics/basics';
+
+
+//comps
+@import './comps/nav-bar';
+@import './comps/map';
+
+//Views
+@import './views/home-page';
+@import './views/gallery';

@@ -1,0 +1,115 @@
+.gallery_container {
+    display: flex;
+    justify-content: center;
+
+    width: 1000px;
+    height: 550px;
+    margin-top: 4rem;
+    background-color: rgb(255, 255, 255);
+
+
+    @include mobile-layout {
+        margin-top: 1rem;
+        display: inline;
+
+    }
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include mobile-layout {
+        align-items: unset;
+    }
+
+}
+
+
+.small-imgs-container {
+
+    @include mobile-layout {
+        display: none;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 34%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: auto;
+
+    .small-img {
+        margin: 0.1rem;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        object-fit: cover;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+    }
+
+
+}
+
+.big-img-container {
+
+    @include mobile-layout {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    width: 40%;
+    height: 100%;
+
+    .big-img {
+        margin: 0.1rem;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        object-fit: cover;
+    }
+}
+
+.carousel-container {
+    align-self: center;
+    height: 100%;
+    border-radius: 4%;
+    width: 27%;
+    margin-right: 10%;
+
+    .css-1m9128y {
+        display: none;
+    }
+
+    @include mobile-layout {
+        margin-right: 0;
+        width: 100%;
+    }
+
+}
+
+.carousel-mobile-container {
+    display: none;
+
+    @include mobile-layout {
+        display: block;
+        margin-right: 0;
+
+        width: 100%;
+
+
+    }
+
+}

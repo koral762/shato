@@ -1,0 +1,269 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: $header-high;
+
+}
+
+.logo-container {
+  background-image: url("../../imgs/logoShato.PNG");
+  width: 20%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-self: start;
+  margin-top: 5%;
+
+
+
+  @include mobile-layout {
+    width: 55%;
+    height: 35%;
+    position: absolute;
+    opacity: 0.4;
+    top: 25%;
+    z-index: 9;
+    left: 22%;
+    
+  }
+
+}
+
+.kinert-img {
+  width: 100%;
+  height: 60%;
+
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+
+  opacity: 0.7;
+
+  background-image: url('http://www.cpndat.co.il/zimmers/pictures/cards/big/60335.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 23%;
+
+  @include mobile-layout {
+
+    top: 2%;
+    opacity: 0.8;
+
+
+  }
+
+}
+
+.gallery-and-information {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  box-shadow: 0 44px 60px 4px #222;
+
+  @include mobile-layout {
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: none;
+  }
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 80%;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem;
+  box-shadow: 5px 5px rgba(138, 236, 223, 0.315);
+
+  text-shadow: 2px 2px 5px #080806;
+
+
+
+
+  @include mobile-layout {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 80%;
+    width: 100%;
+    height: 25rem;
+    font-size: smaller;
+    margin: 6% 0;
+    padding: 0;
+
+    :nth-child(2) {
+      margin: 1rem;
+    }
+
+  }
+
+  .welcome {
+
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: fantasy;
+    font-style: italic;
+    text-shadow: 2px 2px 5px #080806;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+.main-nav a {
+  color: black;
+  font-weight: bold;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.466);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+  }
+}
+
+.more-info {
+  padding: 0.4rem;
+  border-radius: 20px;
+  color: #41403E;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  box-shadow: 2px 2px 5px grey;
+  border: solid 0.1rem #41403E;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+
+  align-self: center;
+  font-weight: bold;
+
+
+  @include mobile-layout {
+
+    background-image: linear-gradient(#c5cfceea, #ffffff);
+    box-shadow: 2px 2px 5px rgba(40, 192, 219, 0.664);
+    border: solid 0.1rem white;
+  }
+
+
+  &:hover {
+    cursor: pointer;
+    border: solid 0.1rem white;
+    background-image: linear-gradient(#c5cfceea, #ffffff);
+    box-shadow: 2px 2px 5px rgba(40, 192, 219, 0.664);
+  }
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3.4rem;
+  width: 100%;
+
+  @include mobile-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+
+    background-color: #6cb5ff;
+    border-top: 3px solid #212529;
+    margin: 0px;
+
+
+  }
+  
+
+  .a-icon {
+    color: #41403E;
+
+    @include mobile-layout {
+
+      color: #081d2f;
+    }
+  }
+
+  .i-whatsapp {
+
+    &:hover {
+      color: rgba(34, 146, 19, 0.466);
+    }
+
+  }
+
+  .i-instagram {
+
+    &:hover {
+      color: rgba(202, 5, 5, 0.589);
+    }
+
+  }
+
+  .i-facebook {
+
+    &:hover {
+      color: rgba(0, 26, 255, 0.534);
+    }
+
+  }
+
+}
+
+li {
+  font-size: 20px;
+  margin: 10px;
+}
+
+li:nth-child(4) {
+  direction: rtl;
+}
+
+img {
+  margin-top: 25%;
+}
