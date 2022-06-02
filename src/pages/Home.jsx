@@ -50,10 +50,8 @@ export const Home = () => {
 
                 <div className="map">
 
-                    <GoogleMapComp
-                        containerElement={<div style={{ height: `300px` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
-                    />
+                    <GoogleMapComp/>
+                    
                 </div>
 
                 <div className="map-information">
