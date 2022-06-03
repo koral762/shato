@@ -24,7 +24,7 @@ export const NavBar = () => {
             <div className="main-nav">
 
                 <div id="menu" onClick={() => toggleMenu(!menuIsOpen)} className={menuIsOpen ? "left-nav open" : "left-nav"}>
-                    <Link to='/dates' ><span className="link">זמינות</span></Link>
+                    <Link to='/Availability' ><span className="link">זמינות</span></Link>
                     <Link to='/review'><span className="link">ביקורות</span></Link>
                     <Link to='/'><span className="link" onClick={(ev) => scrollToElemnt(ev)}>מי אנחנו</span></Link>
                     <Link to='/gallery'><span className="link">גלריה</span></Link>
@@ -36,7 +36,7 @@ export const NavBar = () => {
                 </div>
                 <button className="menu-btn-mobile" onClick={() => toggleMenu(!menuIsOpen)}><i className={menuIsOpen ? "fa fa-close" : "fa fa-align-justify"} style={{ fontSize: "20px" }}></i></button>
                 <div className="right-nav">
-                    <Link to='/dates' ><span className="link ">זמינות</span></Link>
+                    <Link to='/Availability' ><span className="link ">זמינות</span></Link>
                     <Link to='/review'><span className="link ">ביקורות</span></Link>
                     <Link to='/'><span className="link " onClick={(ev) => scrollToElemnt(ev)}>מי אנחנו</span></Link>
                     <Link to='/gallery'><span className="link ">גלריה</span></Link>

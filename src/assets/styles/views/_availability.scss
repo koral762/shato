@@ -1,0 +1,67 @@
+.availability-page{
+    margin-top: 20%;
+}
+
+
+
+.availability-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calender-info{
+
+    padding: 0 1rem;
+    width: 40%;
+    text-align: right;
+    
+}
+
+.whatsapp-calendar{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.calendar-whatsapp-btn{
+
+    padding: 0.4rem;
+    border-radius: 20px;
+    color: #41403E;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 5px grey;
+
+    border: none;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        border: solid 0.1rem white;
+        background-image: linear-gradient(#45c2bc91, #ffffff);
+        box-shadow: 2px 2px 5px rgba(63, 189, 206, 0.685);
+        
+    }
+    
+    @include mobile-layout {
+        display: inline;
+        font-size: smaller;
+       
+    }
+
+}
+
+.calendar{
+
+    box-shadow: 2px 2px 5px rgba(63, 189, 206, 0.685);
+    border-radius: 2%;
+    border: none;
+
+
+}

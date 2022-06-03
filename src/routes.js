@@ -1,6 +1,7 @@
 import { Home } from './pages/Home'
 import { ContactUs } from './pages/ContactUs'
 import { Gallery } from './pages/Gallery'
+import { Availability } from './pages/Availability'
 
 export const routes=[
     {
@@ -15,6 +16,10 @@ export const routes=[
     {
         path: '/gallery',
         component: Gallery,
+    },
+    {
+        path: '/Availability',
+        component: Availability,
     },
  
 ]
