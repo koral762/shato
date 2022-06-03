@@ -10,14 +10,21 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile-layout {
+        flex-direction: column-reverse;
+    }
+    
 }
 
 .calender-info{
-
+    
     padding: 0 1rem;
     width: 40%;
     text-align: right;
     
+    @include mobile-layout {
+        width: 100%;
+    }
 }
 
 .whatsapp-calendar{
