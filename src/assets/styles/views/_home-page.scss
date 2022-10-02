@@ -24,7 +24,7 @@
 .logo-container {
   background-image: url("../../imgs/logoShato.PNG");
   width: 20%;
-  height: 300px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,10 +36,10 @@
     height: 40%;
     position: absolute;
     opacity: 0.4;
-    top: 25%;
+    top: 50%;
     z-index: 9;
     left: 22%;
-    
+
   }
 
 }
@@ -50,22 +50,19 @@
 
   position: absolute;
   z-index: -1;
-  top: 20%;
 
-  opacity: 0.7;
+  opacity: 0.88;
 
-  background-image: url('http://www.cpndat.co.il/zimmers/pictures/cards/big/60335.jpg');
+  background-image: url('https://images.globes.co.il/images/NewGlobes/big_image_800/2019/shutterstock_1323766439800x392.2019414T122316.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 23%;
 
   @include mobile-layout {
 
-    top: 2%;
-    opacity: 0.8;
+    top: 12%;
+    opacity: 0.7;
     height: 70%;
-
-
+    background-size: inherit;
   }
 
 }
@@ -94,20 +91,14 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  border-radius: 80%;
-  height: 25rem;
-  background-color: rgba(0, 0, 0, 0.747);
-  color: white;
+  border-radius: 5%;
+  color: rgb(31, 29, 29);
   text-align: right;
   padding: 0.5rem;
   justify-content: center;
   margin: 0.5rem;
-  box-shadow: 5px 5px rgba(138, 236, 223, 0.315);
 
-  text-shadow: 2px 2px 5px #080806;
-
-
-
+  text-shadow: 2px 2px 5px #ffffff;
 
   @include mobile-layout {
     justify-content: center;
@@ -115,6 +106,9 @@
     text-align: center;
     position: relative;
 
+    background-color: #08080696;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #000000;
     border-radius: 80%;
     width: 100%;
     height: 25rem;
@@ -122,28 +116,23 @@
     margin: 6% 0;
     padding: 0px 25px;
   }
-    
-    :nth-child(2) {
-      margin: 1rem;
-    }
+
+  :nth-child(2) {
+    margin: 1rem;
 
   }
 
-  .welcome {
+}
 
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: fantasy;
-    font-style: italic;
-    text-shadow: 2px 2px 5px #080806;
-    text-align: center;
-  }
+.welcome {
 
-
-
-
-
-
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: fantasy;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #080806;
+  text-align: center;
+}
 
 
 .main-nav a {
@@ -188,7 +177,7 @@
     background-image: linear-gradient(#c5cfceea, #ffffff);
     box-shadow: 2px 2px 5px rgba(40, 192, 219, 0.664);
     border: solid 0.1rem white;
-    position:absolute;
+    position: absolute;
     bottom: 22px;
     z-index: 10;
   }
@@ -222,7 +211,7 @@ a:hover {
     bottom: 0px;
     z-index: 1;
 
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     border-top: 3px solid #212529;
     margin: 0px;
 
@@ -274,5 +263,4 @@ li:nth-child(4) {
   direction: rtl;
 }
 
-img {
-}
+img {}
